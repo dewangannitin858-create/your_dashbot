@@ -1,4 +1,4 @@
-import { IconArrowUpRight, IconBrandGithub, IconBrandX, IconCoffee } from '@tabler/icons-react';
+import { IconArrowUpRight, IconBrandGithub, IconBrandInstagram } from '@tabler/icons-react';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 
@@ -30,30 +30,26 @@ const CardContent = ({
     </>
 );
 
-const LINKS: { href: string; tone: Tone; icon: React.ReactNode; key: string }[] = [
+const LINKS: { href: string; tone: Tone; icon: React.ReactNode; title: string; description: string }[] = [
     {
-        href: 'https://x.com/agustinlautaro',
+        href: 'https://www.instagram.com/n_dewangan7469?lqvp=ZHlheTFocWI0NHZw',
         tone: 'inverse',
-        icon: <IconBrandX size={24} />,
-        key: 'x'
+        icon: <IconBrandInstagram size={24} />,
+        title: 'Follow me on Instagram',
+        description: '@APNA_USERNAME'
     },
     {
-        href: 'https://github.com/agustinl/daily.place/issues',
+        href: 'https://github.com/dewangannitin858-create/your_dashbot/issues',
         tone: 'muted',
         icon: <IconBrandGithub size={24} />,
-        key: 'bug'
-    },
-    {
-        href: 'https://www.buymeacoffee.com/daily.place',
-        tone: 'accent',
-        icon: <IconCoffee size={24} />,
-        key: 'coffee'
+        title: 'Report a bug',
+        description: 'Open an issue on GitHub'
     }
 ];
 
 const Contact = () => {
     const t = useTranslations();
-    const title = `${t('nav.contact')} | daily.place`;
+    const title = `${t('nav.contact')} | Your Dashbot`;
 
     return (
         <>
@@ -72,19 +68,19 @@ const Contact = () => {
             </div>
 
             <ul className={classes.cards}>
-                {LINKS.map(({ href, tone, icon, key }) => (
-                    <li key={key}>
+                {LINKS.map((item) => (
+                    <li key={item.href}>
                         <a
-                            href={href}
+                            href={item.href}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={classes.card}
-                            data-tone={tone}
+                            data-tone={item.tone}
                         >
                             <CardContent
-                                icon={icon}
-                                title={t(`contact.${key}Title`)}
-                                description={t(`contact.${key}Description`)}
+                                icon={item.icon}
+                                title={item.title}
+                                description={item.description}
                                 external
                             />
                         </a>

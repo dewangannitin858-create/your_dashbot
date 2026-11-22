@@ -46,7 +46,7 @@ const NavBar = () => {
         <header className={classes.header}>
             <Link href="/" className={classes.brand}>
                 <Logo />
-                daily.place
+                Your Dashbot
             </Link>
             <nav aria-label={t('nav.main')} className={classes.nav}>
                 {LINKS.map(({ href, label }) => (

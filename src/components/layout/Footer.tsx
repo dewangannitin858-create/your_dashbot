@@ -8,7 +8,7 @@ import { locales, localeNames } from '@/i18n';
 import Logo from '../common/Logo';
 import classes from './Footer.module.css';
 
-const X_URL = 'https://x.com/agustinlautaro';
+const X_URL = 'https://www.instagram.com/n_dewangan7469?lqvp=ZHlheTFocWI0NHZw';
 const REPO_URL = 'https://github.com/dewangannitin858-create/your_dashbot';
 
 const version = process.env.NEXT_PUBLIC_APP_VERSION;
@@ -56,7 +56,7 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
     if (variant === 'minimal') {
         return (
             <footer className={classes.minimal}>
-                <span>daily.place{version && ` · v${version}`}</span>
+                <span>Your Dashbot{version && ` · v${version}`}</span>
                 <nav aria-label={t('footer.label')} className={classes.minimalLinks}>
                     <Link href="/changelog" className={classes.link}>
                         {t('nav.changelog')}
@@ -77,7 +77,7 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
                     <div className={classes.brandColumn}>
                         <Link href="/" className={classes.brand}>
                             <Logo onDark />
-                            daily.place
+                            Your Dashbot
                         </Link>
                         <p>{t('home.subtitle')}</p>
                     </div>
