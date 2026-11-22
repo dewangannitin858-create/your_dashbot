@@ -1,4 +1,4 @@
-import { IconBrandX } from '@tabler/icons-react';
+import { IconBrandInstagram } from '@tabler/icons-react';
 import { format, parseISO } from 'date-fns';
 import { enUS, es, pt } from 'date-fns/locale';
 import { render } from 'datocms-structured-text-to-html-string';
@@ -74,13 +74,13 @@ const Changelog = ({ data }: { data: ChangelogRecord[] }) => {
                     <p className={page.lead}>{t('changelog.description')}</p>
                 </div>
                 <a
-                    href="https://x.com/agustinlautaro"
+                    href="https://www.instagram.com/n_dewangan7469"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={classes.follow}
                 >
-                    <IconBrandX size={16} aria-hidden="true" />
-                    {t('changelog.followOnX')}
+                    <IconBrandInstagram size={16} aria-hidden="true" />
+                    Follow on Instagram
                 </a>
             </div>
 

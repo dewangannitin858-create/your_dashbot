@@ -125,7 +125,7 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
 
                         <div className={classes.column}>
                             <span className={classes.columnTitle}>{t('footer.community')}</span>
-                            <ExternalLink href={X_URL}>X / Twitter</ExternalLink>
+                            <ExternalLink href={X_URL}>Instagram</ExternalLink>
                             <ExternalLink href={REPO_URL}>GitHub</ExternalLink>
                         </div>
                     </nav>
@@ -133,14 +133,14 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
 
                 <div className={classes.bottom}>
                     <span>
-                        {t('footer.madeBy')}{' '}
+                        Made in India by{' '}
                         <a
                             href={X_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={classes.author}
                         >
-                            Agustín
+                            Nitin
                         </a>
                         {version && ` · v${version}`}
                     </span>

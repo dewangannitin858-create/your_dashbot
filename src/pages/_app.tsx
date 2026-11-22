@@ -53,43 +53,41 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>daily.place</title>
-                <meta name="title" content="daily.place" />
+                <title>Your Dashbot</title>
+                <meta name="title" content="Your Dashbot" />
                 <meta
                     name="description"
                     content="Create your perfect space to focus on your daily tasks."
                 />
 
-                <meta property="og:site_name" content="Daily place" />
+                <meta property="og:site_name" content="Your Dashbot" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://daily.place/" />
-                <meta property="og:title" content="daily.place" />
+                <meta property="og:url" content="https://your-dashbot-kx3c.vercel.app/" />
+                <meta property="og:title" content="Your Dashbot" />
                 <meta
                     property="og:description"
                     content="Create your perfect space to focus on your daily tasks."
                 />
                 <meta
                     property="og:image"
-                    content="https://daily.place/banner-light.jpg"
+                    content="https://your-dashbot-kx3c.vercel.app/banner-light.jpg"
                     key="ogImage"
                 />
 
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:url" content="https://daily.place/" />
-                <meta name="twitter:title" content="daily.place" />
+                <meta name="twitter:url" content="https://your-dashbot-kx3c.vercel.app/" />
+                <meta name="twitter:title" content="Your Dashbot" />
                 <meta
                     name="twitter:description"
                     content="Create your perfect space to focus on your daily tasks."
                 />
                 <meta
                     name="twitter:image"
-                    content="https://daily.place/banner-light.jpg"
+                    content="https://your-dashbot-kx3c.vercel.app/banner-light.jpg"
                     key="twImage"
                 />
 
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             {gtag.GA_TRACKING_ID && (

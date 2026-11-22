@@ -36,7 +36,7 @@ const LINKS: { href: string; tone: Tone; icon: React.ReactNode; title: string; d
         tone: 'inverse',
         icon: <IconBrandInstagram size={24} />,
         title: 'Follow me on Instagram',
-        description: '@APNA_USERNAME'
+        description: '@n_dewangan7469'
     },
     {
         href: 'https://github.com/dewangannitin858-create/your_dashbot/issues',
