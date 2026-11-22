@@ -26,7 +26,9 @@ const spaceGrotesk = Space_Grotesk({
     display: 'swap'
 });
 
-const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+const convex = new ConvexReactClient(
+  process.env.NEXT_PUBLIC_CONVEX_URL || 'https://placeholder.convex.cloud'
+);
 
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
