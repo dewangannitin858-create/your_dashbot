@@ -1,51 +1,55 @@
-<div align="center">
-  <img alt="daily.place" src="https://raw.githubusercontent.com/agustinl/daily.place/main/public/favicon-32x32.png">
-  <h1>daily.place</h1>
-  <p>Create your perfect space to focus on your daily tasks.</p>
-  <a href="https://daily.place">daily.place</a>
-</div>
+# Your Dashbot
 
-## Features
+A calm, local-first focus workspace for students and professionals — redesigned with an **Apple-style Liquid Glass UI**.
 
-Each place lives at its own URL (`daily.place/<name>`) and has:
+**Live Demo:** [your-dashbot-kx3c.vercel.app](https://your-dashbot-kx3c.vercel.app/)
 
-- **Pomodoro timer** with short and long breaks
-- **To-do list**
-- **Ambient sounds** you can mix (lofi, rain, forest, coffee shop and more)
-- **Cloud sync** (optional): sign in to use your places on every device
+---
 
-Also: dark mode, keyboard shortcuts, English/Spanish/Portuguese, and installable as an app (PWA).
+## What's New (Recent Updates)
 
-Without an account, everything is stored in your browser.
+- **Apple-Style Liquid Glass UI:** Vibrant liquid mesh background with frosted glass cards (`backdrop-filter: blur`), subtle glass borders, and full Dark/Light mode support.
+- **Complete Rebranding:** Custom gradient SVG logo and browser tab favicon, updated page titles, meta tags, navigation bar, and footer (`Made in India by Nitin`).
+- **Clean, Distraction-Free Interface:** Removed third-party Buy Me a Coffee widgets and updated Contact & Changelog pages with personal links.
+- **Automatic Deployment (CI/CD):** Connected with GitHub + Vercel so every push goes live automatically.
 
-## Keyboard shortcuts
+---
+
+## Core Features
+
+Each space lives at its own custom URL (`/<name>`) and includes:
+
+- **Pomodoro Timer** with short and long breaks
+- **To-Do List** to track daily tasks
+- **Ambient Sound Mixer** (lofi, rain, forest, coffee shop, and more)
+- **Dark & Light Liquid Glass Theme**
+- **Local-First Storage** — works instantly in your browser without requiring an account
+
+---
+
+## Keyboard Shortcuts
 
 | Shortcut | Action |
-|---|---|
-| ⌘/Ctrl + P | Play / pause the timer |
-| ⌘/Ctrl + Alt + 1 / 2 / 3 | Pomodoro / short break / long break |
-| ⌘/Ctrl + J | Toggle dark mode |
+| --- | --- |
+| `⌘/Ctrl + P` | Play / pause the timer |
+| `⌘/Ctrl + Alt + 1 / 2 / 3` | Pomodoro / short break / long break |
+| `⌘/Ctrl + J` | Toggle dark mode |
 
-## Development
+---
 
-```bash
-npm install
-cp .env.example .env.local   # fill in the Clerk and Convex values
-npm run dev
-```
+## Tech Stack
 
-Tests: `npm test` (unit), `npm run test:convex` (backend), `npm run test:e2e` (Playwright).
+Built with **Next.js**, **React**, **TypeScript**, **Mantine UI**, and **Vercel**.
 
-Built with Next.js, Mantine, Convex, Clerk and next-intl.
+---
 
-## Credits and licenses
+## Connect
 
-- **Avatars**: [DiceBear](https://www.dicebear.com) (MIT). Styles: [Glass](https://www.dicebear.com/styles/glass/) by DiceBear and [Notionists Neutral](https://www.dicebear.com/styles/notionists-neutral/), a remix of [Notionists](https://heyzoish.gumroad.com/l/notionists) by Zoish, both [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
-- **Icons**: [Tabler Icons](https://tabler.io/icons) (MIT).
-- **Fonts**: [Inter](https://rsms.me/inter/) and [Space Grotesk](https://github.com/floriankarsten/space-grotesk) (SIL Open Font License 1.1).
-- **Sounds**: played from YouTube through its embedded player; each video belongs to its creator.
-- **Libraries**: see [package.json](package.json) for the full list and their licenses.
+Made in India by **Nitin**
 
-## Contributing
+- **Instagram:** [@n_dewangan7469](https://www.instagram.com/n_dewangan7469)
+- **GitHub:** [dewangannitin858-create/your_dashbot](https://github.com/dewangannitin858-create/your_dashbot)
 
-Issues and pull requests are welcome. For questions or feedback, use the [contact page](https://daily.place/contact).
+---
+
+*Forked from [daily.place](https://github.com/agustinl/daily.place).*
