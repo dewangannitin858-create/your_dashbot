@@ -8,9 +8,8 @@ import { locales, localeNames } from '@/i18n';
 import Logo from '../common/Logo';
 import classes from './Footer.module.css';
 
-const COFFEE_URL = 'https://www.buymeacoffee.com/daily.place';
 const X_URL = 'https://x.com/agustinlautaro';
-const REPO_URL = 'https://github.com/agustinl/daily.place';
+const REPO_URL = 'https://github.com/dewangannitin858-create/your_dashbot';
 
 const version = process.env.NEXT_PUBLIC_APP_VERSION;
 
@@ -65,7 +64,6 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
                     <Link href="/contact" className={classes.link}>
                         {t('nav.contact')}
                     </Link>
-                    <ExternalLink href={COFFEE_URL}>{t('footer.buyMeACoffee')}</ExternalLink>
                 </nav>
                 <LanguagePicker />
             </footer>
@@ -129,9 +127,6 @@ const Footer = ({ variant = 'full', showPlaces = false }: FooterProps) => {
                             <span className={classes.columnTitle}>{t('footer.community')}</span>
                             <ExternalLink href={X_URL}>X / Twitter</ExternalLink>
                             <ExternalLink href={REPO_URL}>GitHub</ExternalLink>
-                            <ExternalLink href={COFFEE_URL}>
-                                {t('footer.buyMeACoffee')}
-                            </ExternalLink>
                         </div>
                     </nav>
                 </div>

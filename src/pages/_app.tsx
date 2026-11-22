@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
+import '../liquid-glass.css';
 
 import { useEffect } from 'react';
 import { ClerkProvider, useAuth } from '@clerk/nextjs';

@@ -1,0 +1,77 @@
+/* === Liquid Glass UI Theme (Light + Dark) === */
+
+:root {
+  --dp-surface: rgba(255, 255, 255, 0.58) !important;
+  --dp-surface-muted: rgba(255, 255, 255, 0.42) !important;
+  --dp-surface-alt: rgba(255, 255, 255, 0.35) !important;
+  --dp-border: rgba(255, 255, 255, 0.65) !important;
+  --dp-border-strong: rgba(255, 255, 255, 0.85) !important;
+}
+
+[data-mantine-color-scheme='dark'] {
+  --dp-surface: rgba(24, 26, 34, 0.55) !important;
+  --dp-surface-muted: rgba(30, 33, 44, 0.45) !important;
+  --dp-surface-alt: rgba(38, 42, 56, 0.4) !important;
+  --dp-border: rgba(255, 255, 255, 0.14) !important;
+  --dp-border-strong: rgba(255, 255, 255, 0.24) !important;
+}
+
+/* Soft Liquid Mesh Background */
+body {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(120, 180, 255, 0.35), transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(190, 140, 255, 0.32), transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(100, 225, 200, 0.28), transparent 50%),
+    #eef2f8 !important;
+  background-attachment: fixed !important;
+}
+
+[data-mantine-color-scheme='dark'] body {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(56, 120, 255, 0.28), transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(145, 70, 255, 0.24), transparent 45%),
+    radial-gradient(circle at 50% 85%, rgba(20, 184, 166, 0.2), transparent 50%),
+    #0b0e17 !important;
+  background-attachment: fixed !important;
+}
+
+/* Frosted Glass Effect on Cards, Panels, Modals & Inputs */
+.mantine-Paper-root,
+.mantine-Card-root,
+.mantine-Modal-content,
+.mantine-Menu-dropdown,
+.mantine-Popover-dropdown,
+.mantine-SegmentedControl-root {
+  background: var(--dp-surface) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: 1px solid var(--dp-border) !important;
+  box-shadow:
+    0 8px 32px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
+  border-radius: 18px !important;
+}
+
+[data-mantine-color-scheme='dark'] .mantine-Paper-root,
+[data-mantine-color-scheme='dark'] .mantine-Card-root,
+[data-mantine-color-scheme='dark'] .mantine-Modal-content,
+[data-mantine-color-scheme='dark'] .mantine-Menu-dropdown,
+[data-mantine-color-scheme='dark'] .mantine-Popover-dropdown,
+[data-mantine-color-scheme='dark'] .mantine-SegmentedControl-root {
+  box-shadow:
+    0 10px 36px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Smooth Glass Hover for Buttons */
+.mantine-Button-root,
+.mantine-ActionIcon-root {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.mantine-Button-root:hover,
+.mantine-ActionIcon-root:hover {
+  transform: translateY(-1px);
+}
